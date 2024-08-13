@@ -4,7 +4,7 @@ services:
     name: pytele-loader
     repo: https://github.com/SilentDemonSD/pyTele-Loader
     branch: main
-    region: singapore
+    region: ohio
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn -b :$PORT app:app & chmod +x pyteledeploy.sh && ./pyteledeploy.sh & python3 alive.py
